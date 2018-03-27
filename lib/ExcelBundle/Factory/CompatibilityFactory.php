@@ -12,7 +12,7 @@ use PhpOffice\PhpSpreadsheet\Writer\IWriter;
 /**
  * Factory for Spreadsheet objects
  *
- * Factory  inspired by the Liuggio\ExcelBundle\Factory, migrated for phpSpreadSheet Usage
+ * Factory  inspired by the liuggio\ExcelBundle\Factory, migrated for phpoffice/phpSpreadSheet Usage
  * (PhpExcel used by liuggio is abandoned)
  *
  * @package Onurb\Bundle\ExcelBundle
@@ -63,17 +63,14 @@ class CompatibilityFactory
 
     /**
      * Create a writer given the PHPExcelObject and the type,
-     *   the type could be one of PHPExcel_IOFactory::$_autoResolveClasses
      *
      * @param Spreadsheet $phpExcelObject
      * @param string $type
-     *
-     *
      * @return IWriter
      */
-    public function createWriter(Spreadsheet $spreadSheetObject, $type = 'Xlsx')
+    public function createWriter(Spreadsheet $phpExcelObject, $type = 'Xlsx')
     {
-        return $this->factory->createWriter($spreadSheetObject, $type);
+        return $this->factory->createWriter($phpExcelObject, $type);
     }
 
     /**

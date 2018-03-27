@@ -77,7 +77,7 @@ class ExcelFactory
      * Create a writer given the PHPExcelObject and the type,
      *   the type could be one of PHPExcel_IOFactory::$_autoResolveClasses
      *
-     * @param Spreadsheet $phpExcelObject
+     * @param Spreadsheet $spreadSheetObject
      * @param string $type
      *
      * @return IWriter

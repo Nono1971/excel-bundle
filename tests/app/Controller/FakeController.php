@@ -64,7 +64,6 @@ class FakeController extends Controller
         /** @var ExcelFactory $factory */
         $factory = $this->get('phpspreadsheet');
 
-        $filename = $this->container->getParameter('xls_fixture_absolute_path');
         // create an object from a filename
         $spreadsheet = $this->createSpreadsheet();
         // create the writer

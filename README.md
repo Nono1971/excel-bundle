@@ -1,5 +1,11 @@
 Symfony Excel bundle
 ============
+[![Build Status](https://travis-ci.org/Nono1971/excel-bundle.svg?branch=master)](https://travis-ci.org/Nono1971/excel-bundle)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Nono1971/excel-bundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Nono1971/excel-bundle/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/Nono1971/excel-bundle/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Nono1971/excel-bundle/?branch=master)
+[![License](https://poser.pugx.org/onurb/excel-bundle/license)](https://packagist.org/packages/onurb/excel-bundle)
+[![Latest Stable Version](https://poser.pugx.org/onurb/excel-bundle/v/stable)](https://packagist.org/packages/onurb/excel-bundle)
+[![Total Downloads](https://poser.pugx.org/onurb/excel-bundle/downloads)](https://packagist.org/packages/onurb/excel-bundle)
 
 ## Installation
 
