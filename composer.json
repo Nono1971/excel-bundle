@@ -1,0 +1,52 @@
+{
+    "name": "onurb/excel-bundle",
+    "description": "Symfony Bundle to read or write Excel file (including pdf, xlsx, odt), using phpoffice/phpspreadsheet library (replacement of phpoffice/phpexcel, abandonned)",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+      {
+          "name": "Bruno Heron",
+          "email": "herobrun@gmail.com"
+      },
+      {
+        "name": "Giulio De Donato",
+        "email": "liuggio@gmail.com"
+      }
+    ],
+    "keywords": ["xls", "xlsx", "excel", "phpexcel", "spreadsheet", "symfony", "bundle"],
+    "require": {
+        "php":                          ">=5.6",
+        "symfony/config":               "~3.2|~4.0",
+        "symfony/dependency-injection": "~3.2|~4.0",
+        "symfony/http-kernel":          "~3.2|~4.0",
+        "symfony/http-foundation":      "~3.2|~4.0",
+        "symfony/framework-bundle":     "~3.2|~4.0",
+        "phpoffice/phpspreadsheet":     "~1.0"
+    },
+    "require-dev": {
+        "php":                            ">=7.0",
+        "symfony/symfony":                "~3.2|~4.0",
+        "sensio/framework-extra-bundle":  "~3.2|~4.0",
+        "squizlabs/php_codesniffer":      "~2",
+        "phpunit/phpunit":                "~6.5"
+    },
+    "autoload": {
+        "psr-4": {
+          "Onurb\\Bundle\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "OnurbTest\\Bundle\\ExcelBundle\\": "tests/ExcelBundleTests/",
+          "Onurb\\Bundle\\ExcelBundle\\": "tests/app/"
+        }
+    },
+    "suggest": {
+        "onurb/doctrine-yuml-bundle": "Use this bundle to generate mapping graph from your entities"
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": "true"
+        }
+    }
+}

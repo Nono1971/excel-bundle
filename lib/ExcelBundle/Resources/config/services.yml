@@ -1,0 +1,10 @@
+services:
+    phpspreadsheet:
+        class: Onurb\Bundle\ExcelBundle\Factory\ExcelFactory
+        public: true
+
+    phpexcel:
+        class: Onurb\Bundle\ExcelBundle\Factory\CompatibilityFactory
+        public: true
+        arguments:
+            - "@phpspreadsheet"

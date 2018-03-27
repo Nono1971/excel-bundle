@@ -1,0 +1,51 @@
+fake_route_stream:
+    path:      /fake/stream
+    defaults:  { _controller: OnurbExcelBundle:Fake:stream }
+
+fake_route_store:
+    path:      /fake/store
+    defaults:  { _controller: OnurbExcelBundle:Fake:store }
+
+fake_route_reader:
+    path:      /fake/reader
+    defaults:  { _controller: OnurbExcelBundle:Fake:reader }
+
+fake_route_read:
+    path:      /fake/read
+    defaults:  { _controller: OnurbExcelBundle:Fake:readAndSave }
+
+fake_route_store_with_drawing:
+    path:      /fake/drawing
+    defaults:  { _controller: OnurbExcelBundle:Fake:createSpreadSheetWithDrawing }
+
+
+compatibility_route_stream:
+    path:      /compatibility/stream
+    defaults:  { _controller: OnurbExcelBundle:Compatibility:stream }
+
+compatibility_route_store:
+    path:      /compatibility/store
+    defaults:  { _controller: OnurbExcelBundle:Compatibility:store }
+
+compatibility_route_reader:
+    path:      /compatibility/reader
+    defaults:  { _controller: OnurbExcelBundle:Compatibility:reader }
+
+compatibility_route_read:
+    path:      /compatibility/read
+    defaults:  { _controller: OnurbExcelBundle:Compatibility:readAndSave }
+
+compatibility_route_store_with_drawing:
+    path:      /compatibility/drawing
+    defaults:  { _controller: OnurbExcelBundle:Compatibility:createSpreadSheetWithDrawing }
+
+
+wrong_parameter_route_writer_type:
+    path:       /wrong/type/writer
+    defaults:   { _controller: OnurbExcelBundle:WrongParameter:wrongTypeWriter }
+
+wrong_parameter_route_reader_type:
+    path:       /wrong/type/reader
+    defaults:   { _controller: OnurbExcelBundle:WrongParameter:wrongTypeReader }
+
+
