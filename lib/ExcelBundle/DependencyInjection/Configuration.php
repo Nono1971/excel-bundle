@@ -17,8 +17,7 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('onurb_excel');
+        $treeBuilder = new TreeBuilder('onurb_excel');
 
         return $treeBuilder;
     }
